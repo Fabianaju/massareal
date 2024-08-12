@@ -1,0 +1,690 @@
+header {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 20px;
+    background-color: #f4a261;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo {
+    margin-right: auto; 
+    text-align: left; 
+    margin-left: 5px;
+    max-width: 200px; /
+}
+
+header .logo h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+header .logo:hover h1 {
+    transform: scale(1.1);
+}
+
+header .main-nav {
+    margin-left: 20px; 
+}
+
+header .main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+header .main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+header .main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header .social-icons {
+    margin-left: auto; 
+    display: flex;
+    gap: 35px;
+      padding: 0 30px;
+}
+
+header .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+header .social-icons a:hover {
+    color: #ffddc1;
+}
+
+
+/* Estilo da seção hero */
+.hero {
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+    min-height: 100vh;
+}
+
+.hero-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-family: 'Pacifico', cursive;
+}
+
+.hero-text p {
+    font-size: 24px;
+}
+
+.hero-text .btn {
+    font-size: 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-text .btn:hover {
+    background-color: #ff3b2c;
+}
+
+/* Estilo da seção Sobre */
+.about {
+    background-color: #fff8f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.about-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about-content .btn {
+    font-size: 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-content .btn:hover {
+    background-color: #ff3b2c;
+    transform: translateY(-5px); 
+}
+/* Estilo da Seção Promoções */
+ .promocoes {
+    background: #f5f5f5;
+    padding: 40px 20px;
+}
+
+.promocoes-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.promocao {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.promocao img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.promocao-info {
+    margin-left: 20px;
+}
+
+.promocoes-content .btn {
+    margin-top: 10px;
+}
+/* Estilo do botão específico para promoções */
+.btn-promocao {
+    font-size: 18px;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Adiciona um comportamento de bloco ao botão */
+}
+
+.btn-promocao:hover {
+    background-color: #ff3b2c;
+    transform: translateY(-3px); /* Movimento ao passar o mouse */
+}
+/* Estilo da seção Serviços */
+.services {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.service {
+    margin-bottom: 30px;
+}
+
+.service h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 18px;
+}
+/* Estilo da Galeria */
+.gallery {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.gallery-item img:hover {
+    transform: scale(1.05); /* Escala a imagem ao passar o mouse */
+}
+.gallery-item p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Estilo da Seção Chefs */
+.chefs {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.chefs-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.chefs-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Estilo para o container dos chefs */
+.chefs-content {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.chef {
+    flex: 1 1 calc(33.333% - 20px); 
+    margin-bottom: 30px;
+    box-sizing: border-box; 
+    text-align: center; 
+}
+
+.chef img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.chef img:hover {
+    transform: scale(1.05);
+}
+.chef h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.chef p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Estilo da seção Contato */
+.contact {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.contact-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-content label {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-content input,
+.contact-content textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-content button {
+    font-size: 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-content button:hover {
+    background-color: #ff3b2c;
+}
+
+
+/* Estilo do Rodapé */
+footer {
+    background-color: #f4a261;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-content .social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.footer-content .social-icons a {
+    color: #fff;
+    font-size: 28px; 
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-content .social-icons a:hover {
+    color: #ffddc1; 
+    transform: scale(1.2); 
+}
+
+/* Estilo da Seção Testemunhos */
+.testimonials {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.testimonials-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-item {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonial-item p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.testimonial-item h4 {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+/* Estilizando o slider (caso use um slider JavaScript) */
+.testimonials-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.testimonial-item {
+    flex: 1 0 300px; 
+}
+/* Estilo Responsivo */
+
+/* Ajustes para tablets */
+@media (max-width: 768px) {
+    /* Estilo do cabeçalho */
+    header .contact-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .contact-info .email,
+    header .contact-info .phone {
+        font-size: 14px;
+    }
+
+    header .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header .main-nav ul li a {
+        font-size: 18px;
+    }
+
+    header .social-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Estilo da seção hero */
+    .hero-text h2 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+    }
+
+    /* Estilo da seção Sobre */
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .about-content p {
+        font-size: 18px;
+    }
+
+    /* Estilo da Seção Promoções */
+    .promocao-info h3 {
+        font-size: 20px;
+    }
+
+    .promocao-info p {
+        font-size: 16px;
+    }
+
+    /* Estilo da seção Serviços */
+    .service h3 {
+        font-size: 24px;
+    }
+
+    .service p {
+        font-size: 16px;
+    }
+
+    /* Estilo da Galeria */
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    /* Estilo da Seção Chefs */
+    .chef {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    /* Estilo da Seção Testemunhos */
+    .testimonials-slider {
+        flex-direction: column;
+    }
+
+    .testimonial-item {
+        flex: 1 0 100%;
+    }
+}
+
+    /* Estilo da seção Contato */
+    .contact-content h2 {
+        font-size: 30px;
+    }
+
+    .contact-content form {
+        gap: 10px;
+    }
+
+    .contact-content label {
+        font-size: 16px;
+    }
+
+    .contact-content input,
+    .contact-content textarea {
+        font-size: 14px;
+    }
+
+    .contact-content button {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    /* Estilo do Rodapé */
+    footer {
+        padding: 10px 0;
+    }
+
+    .footer-content p {
+        font-size: 14px;
+    }
+
+    .footer-social-icons a {
+        font-size: 20px;
+    }
+
+
+/* Ajustes para smartphones */
+@media (max-width: 480px) {
+    /* Estilo do cabeçalho */
+    header .contact-info {
+        font-size: 12px;
+    }
+
+    header .main-nav ul li a {
+        font-size: 16px;
+    }
+
+    header .social-icons a {
+        font-size: 20px;
+    }
+
+    /* Estilo da seção hero */
+    .hero-text h2 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    /* Estilo da seção Sobre */
+    .about-content h2 {
+        font-size: 24px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    /* Estilo da Seção Promoções */
+    .promocao-info h3 {
+        font-size: 18px;
+    }
+
+    .promocao-info p {
+        font-size: 14px;
+    }
+
+    /* Estilo da seção Serviços */
+    .service h3 {
+        font-size: 22px;
+    }
+
+    .service p {
+        font-size: 14px;
+    }
+
+    /* Estilo da Galeria */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Estilo da Seção Chefs */
+    .chef {
+        flex: 1 1 100%;
+    }
+
+    /* Estilo da seção Contato */
+    .contact-content h2 {
+        font-size: 24px;
+    }
+
+    .contact-content label {
+        font-size: 14px;
+    }
+
+    .contact-content input,
+    .contact-content textarea {
+        font-size: 12px;
+    }
+
+    .contact-content button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* Estilo do Rodapé */
+    .footer-content p {
+        font-size: 12px;
+    }
+
+    .footer-social-icons a {
+        font-size: 18px;
+    }
+
+    /* Estilo da Seção Testemunhos */
+    .testimonials-slider {
+        flex-direction: column;
+    }
+
+    .testimonial-item {
+        flex: 1 0 100%;
+    }
+}
